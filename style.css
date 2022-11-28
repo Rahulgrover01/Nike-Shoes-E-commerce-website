@@ -171,3 +171,21 @@ nav{
 .slideritem:nth-child(5) .sliderPrice{
     color: lightcoral;
 }
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.featureIcon{
+    height: 50px;
+    width: 50px;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* justify-content: space-between; */
+}
