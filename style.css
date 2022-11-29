@@ -215,10 +215,63 @@ nav{
     position: absolute;
     top: 12%;
     right: 4%;
-    width: 40%;
+    width: 43%;
     padding: 50px;
 }
 .producttitle{
     font-size: 75px;
     font-weight: 900;
+}
+.productDesc{
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 20px;
+}
+.productPrice{
+    margin: 30px 0 30px 0;
+}
+.colors, .sizes{
+    display: flex;
+    margin-bottom: 20px;
+}
+.color{
+    height: 32px;
+    width: 32px;
+    border-radius: 30px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color:last-child{
+    background-color: green;
+}
+.size{
+    padding: 5px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+.productBtn{
+    position: absolute;
+    right: 15%;
+    bottom: 1%;
+    /* float: right; */
+    padding: 10px 20px;
+    font-size: 19px;
+    font-weight: 700;
+    background-color: black;
+    color: #fff;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    /* margin-bottom: 1000px; */
+    transition: all .3s;
+}
+.productBtn:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+
 }
