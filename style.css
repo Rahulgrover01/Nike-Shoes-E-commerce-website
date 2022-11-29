@@ -201,3 +201,24 @@ nav{
     width: 50%;
     height: 100px;
 }
+.product{
+    height: 100vh;
+    background-color: whitesmoke;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+    position: relative;
+}
+.productImg{
+    /* position: relative; */
+    width: 50%;
+}
+.productDetails{
+    position: absolute;
+    top: 12%;
+    right: 4%;
+    width: 40%;
+    padding: 50px;
+}
+.producttitle{
+    font-size: 75px;
+    font-weight: 900;
+}
