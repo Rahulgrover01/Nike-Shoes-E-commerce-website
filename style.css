@@ -228,7 +228,8 @@ nav{
     margin-bottom: 20px;
 }
 .productPrice{
-    margin: 30px 0 30px 0;
+    /* position: absolute; */
+    margin: 30px 0 30px 30px;
 }
 .colors, .sizes{
     display: flex;
@@ -238,7 +239,8 @@ nav{
     height: 32px;
     width: 32px;
     border-radius: 30px;
-    background-color: black;
+    background-color: rgb(225, 136, 136);
+    /* border: 0.1px solid black; */
     margin-right: 10px;
     cursor: pointer;
 }
