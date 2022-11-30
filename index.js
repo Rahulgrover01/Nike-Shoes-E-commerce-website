@@ -7,12 +7,12 @@ const Products =[{
     id: 1,
     title: "Jordan",
     price: 115,
-    color: [{
+    colors: [{
         code: "rgb(225, 136, 136)",
         img: "./jordan.png",
     },
 {
-    code: "black",
+    code: "green",
     img: "./jordan2.png" 
 },
 ],
@@ -21,7 +21,7 @@ const Products =[{
 id: 2,
     title: "Hippie",
     price: 110,
-    color: [{
+    colors: [{
         code: "black",
         img: "./hippie2.png",
     },
@@ -33,47 +33,47 @@ id: 2,
 },
 {
     id: 3,
-    title: "blazer",
+    title: "Blazer",
     price: 100,
-    color: [{
+    colors: [{
         code: "green",
         img: "./blazer2.png",
     },
 {
-    code: "black",
+    code: "white",
     img: "./blazer.png" 
 },
-    ]  
+    ], 
 },
 {
     id: 4,
     title: "Air force",
     price: 100,
-    color: [{
-        code: "dark-blue",
+    colors: [{
+        code: "darkblue",
         img: "./air2.png",
     },
 {
     code: "black",
     img: "./air.png" 
 },
-    ]  
+    ] , 
 },
 {
     id: 5,
     title: "Crater",
     price: 100,
-    color: [{
-        code: "white",
+    colors: [{
+        code: "lightgray",
         img: "./crater2.png",
     },
 {
     code: "black",
     img: "./crater.png" 
 },
-    ]  
-}
-]
+    ] , 
+},
+];
 
 let ChoosenProduct = Products[0]
 const currentProductImg= document.querySelector(".productImg")
@@ -86,13 +86,19 @@ menuItems.forEach((item, index) => {
         wrapper.style.transform= `translateX(${-100 * index}vw)`;
         // slideritem.style.transform= `translateX(${-100 * index}vw)`;
         ChoosenProduct= Products[index]
-        currentProductImg.src= ChoosenProduct.color[0].img
+        currentProductImg.src= ChoosenProduct.colors[0].img
         currentProductTitle.textContent= ChoosenProduct.title
         currentProductPrice.textContent = "$" + ChoosenProduct.price
 currentProductColors.forEach((color,index)=>{
-    color.style.backgroundColor= ChoosenProduct.color[index].code
+    color.style.backgroundColor= ChoosenProduct.colors[index].code
 })
 
     });
 });
+
+currentProductColors.forEach((color,index) =>{
+    color.addEventListener("click", ()=>{
+        currentProductImg.src= ChoosenProduct.colors[index].img
+    });
+    });
 
