@@ -127,7 +127,7 @@ nav{
 .buyBtn{
     position: absolute;
     color: #fff;
-    top: 55%;
+    top: 57%;
     right: 12%;
     font-size: 30px;
     font-weight: 900;
@@ -210,6 +210,43 @@ nav{
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
     position: relative;
 }
+.payment{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgb(223, 213, 196);
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+    box-shadow: -1px 0px 29px -6px rgba(0,0,0,0.96);
+-webkit-box-shadow: -1px 0px 29px -6px rgba(0,0,0,0.96);
+-moz-box-shadow: -1px 0px 29px -6px rgba(0,0,0,0.96);
+}
+.payTitle{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+label{
+    /* margin-top: 10px; */
+    font-size: 16px;
+    font-weight: 300;
+}
+.payInput{
+    background-color: transparent;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.payInput::placeholder{
+    color: rgb(42, 40, 40);
+}
+
 .productImg{
     /* position: relative; */
     width: 47%;
